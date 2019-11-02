@@ -6,7 +6,7 @@ $quotes = [
     // Each inner array element should be an associative array
     [ 'quote'      => 'You must be the change you want to see in the world.',
       'source'     => 'Mahatma Gandhi',
-      'citation'   => 'Quoted in L.A. Times, 30 July 1989.',
+      'citation'   => 'Quoted in L.A. Times, 30 July 1989',
       'year'       => '1989'
     ],
 
@@ -56,7 +56,7 @@ function printQuote() {
   // using the template in the project instructions, add the two default quote properties
   $displayQuote =  '<p class="quote">' . $quote['quote'] . '</p>';
   $displayQuote .= '<p class="source">' . $quote['source'];
-                    // if the quote contains a citation value, add it the string
+  // if the quote contains a citation value, add it the string
   if (isset($quote['citation'])) {
       $displayQuote .= '<span class="citation">' . $quote['citation'] . '</span>';
   }
@@ -66,7 +66,7 @@ function printQuote() {
   }
   // close the string with the necessary closing HTML tags
   $displayQuote .= '</p>';
-    // display the complete HTML string
+  // display the complete HTML string
   return $displayQuote;
 }
 
